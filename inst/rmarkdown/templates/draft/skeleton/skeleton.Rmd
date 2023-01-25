@@ -1,0 +1,28 @@
+---
+title: "Untitled"
+author: "Pierre Catoire"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r prelude, include=FALSE}
+set.seed(42)
+invisible(lapply(c(
+  "ggplot2",
+  "dplyr",
+  "stringr",
+  "lubridate",
+  "kableExtra",
+  "crosstable", # summary tables
+  "styler" # Styling conventions
+), library, character.only = TRUE))
+```
+
+```{r styling, eval=FALSE, include=FALSE}
+# Eval this chunk (copy-paste in console) for custom styling with dplyr styling convention, except "<-"
+transformers = tidyverse_style()
+transformers$token$force_assignment_op = NULL
+style_file(path = "code/drafts/descriptivestats.Rmd", transformers = transformers)
+```
+
+# Start

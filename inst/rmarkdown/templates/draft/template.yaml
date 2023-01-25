@@ -1,0 +1,7 @@
+name: Draft
+description: >
+   A template for draft Rmd files, with presets for:
+   - seed
+   - first packages
+   - styling, using styler
+create_dir: FALSE
